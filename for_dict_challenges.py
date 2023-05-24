@@ -12,8 +12,24 @@ students = [
     {'first_name': 'Маша'},
     {'first_name': 'Петя'},
 ]
-# ???
 
+count_vasya = 0
+count_masha = 0
+count_petya = 0
+
+for name in students:
+    if name['first_name'] == 'Вася':
+        count_vasya += 1
+
+    if name['first_name'] == 'Маша':
+        count_masha += 1
+
+    if name['first_name'] == 'Петя':
+        count_petya += 1
+
+print(f'Вася: {count_vasya}')
+print(f'Маша: {count_masha}')
+print(f'Петя: {count_petya}')
 
 # Задание 2
 # Дан список учеников, нужно вывести самое часто повторящееся имя
@@ -57,7 +73,7 @@ school_students = [
 # Задание 4
 # Для каждого класса нужно вывести количество девочек и мальчиков в нём.
 # Пример вывода:
-# Класс 2a: девочки 2, мальчики 0 
+# Класс 2a: девочки 2, мальчики 0
 # Класс 2б: девочки 0, мальчики 2
 
 school = [
@@ -92,4 +108,3 @@ is_male = {
     'Миша': True,
 }
 # ???
-
